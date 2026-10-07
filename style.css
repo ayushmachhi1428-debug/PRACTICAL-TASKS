@@ -1,0 +1,192 @@
+
+/* =========================================
+   BREWNEST CAFÉ - STYLE.CSS
+   ITUS102 WTF Practical Exam - Set 1
+   ========================================= */
+
+
+/* ---------- Element Selector ---------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3e2723;
+    margin: 0;
+    background-color: #fff8f0;
+    line-height: 1.6;
+}
+
+
+/* ---------- Header - Flexbox ---------- */
+
+header {
+    background-color: #5d4037;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ---------- Logo Area ---------- */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo-area h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* ---------- Navigation - Flexbox ---------- */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #d7a86e;
+    color: #3e2723;
+}
+
+
+/* ---------- Main Content ---------- */
+
+main {
+    width: 88%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: #6d4c41;
+    margin-top: 0;
+    border-bottom: 2px solid #d7a86e;
+    padding-bottom: 8px;
+}
+
+
+/* ---------- About Section ---------- */
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+
+/* ---------- Menu Grid ---------- */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ---------- Menu Card - Box Model ---------- */
+
+.menu-card {
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid #d7a86e;
+    border-radius: 12px;
+    background-color: #fff3e0;
+    box-sizing: border-box;
+}
+
+.menu-card h3 {
+    color: #5d4037;
+    margin-top: 0;
+}
+
+.menu-card ul {
+    padding-left: 20px;
+}
+
+
+/* =========================================
+   SPECIFICITY DEMONSTRATION
+   ========================================= */
+
+/*
+   The same element can have class="special-offer"
+   and id="student-offer".
+
+   #student-offer wins over .special-offer because
+   an ID selector has higher specificity than a class selector.
+*/
+
+.special-offer {
+    color: green;
+}
+
+#student-offer {
+    color: #b71c1c;
+}
+
+
+/* ---------- Specials ---------- */
+
+#specials {
+    text-align: center;
+}
+
+#specials strong {
+    color: #b71c1c;
+    font-size: 20px;
+}
+
+
+/* ---------- Price Table ---------- */
+
+#price-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid
+}
